@@ -8,8 +8,8 @@ public interface AnInterface {
 	
 	// you can define as many abstract methods as you want
 	abstract void a();
-	abstract void b();
-	abstract void c();
+	void b();
+	int c();
 	
 	// you can define implemented methods as well
 	// you may have to look up which access modifiers are allowed (this depends on the static modifier)
@@ -19,10 +19,10 @@ public interface AnInterface {
 	}
 	
 	private static void helperMethod() {
-		return;
+		System.out.println("This is my helper method");
 	}
 	
 	
 	// {compiler error} all static methods need to be defined in the interface
-	abstract static void abstractStaticMethod(); 
+	// abstract static void abstractStaticMethod(); 
 }
