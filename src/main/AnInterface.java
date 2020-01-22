@@ -15,11 +15,11 @@ public interface AnInterface {
 	// you may have to look up which access modifiers are allowed (this depends on the static modifier)
 	default void interfaceMethod() {
 		helperMethod();
-		System.out.println("This method is defined in AnInterface");
+		System.out.println("This method is defined in [AnInterface]");
 	}
 	
 	private static void helperMethod() {
-		System.out.println("This is my helper method");
+		System.out.println("This is my helper method in [AnInterface]");
 	}
 	
 	

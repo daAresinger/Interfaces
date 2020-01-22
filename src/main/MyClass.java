@@ -1,14 +1,6 @@
 package main;
 
 public class MyClass implements AnInterface, OtherInterface{
-	
-	public static void main(String[] args) {
-		//static methods in interfaces can be called like in any class
-		OtherInterface.staticMethod();
-		
-		MyClass myObject = new MyClass();
-		myObject.interfaceMethod();
-	}
 
 	// interfaceMethod is present in both AnInterface and OtherInterface, as such this class needs to override these methods
 	@Override
@@ -20,6 +12,7 @@ public class MyClass implements AnInterface, OtherInterface{
 	
 	@Override
 	public void a() {
+		System.out.println("This is [MyClass] speaking");
 	}
 
 	@Override
